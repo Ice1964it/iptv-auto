@@ -7,32 +7,50 @@ on:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - run: pip install -r requirements.txt
-
-      - run: python generate.py
-
-      - - name: Commit e push
+      - name: Install dependencies
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate playlist
+        run: python generate.py
+
+      - name: Check changes
+        id: changes
+        run: |
+          if git diff --quiet playlist.m3u; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
           git add playlist.m3u
-
-          git diff --cached --quiet && echo "no changes" && exit 0
-
-          git commit -m "update playlist"
-
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git commit -m "update playlist [auto]"
+          
+      - name: Push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: git push origin main
