@@ -1,2 +1,30 @@
-# Generated: 2026-05-16T20:19:59.890727
+# Generated: 2026-05-16T20:24:57.755920
 #EXTM3U
+#EXTINF:-1 group-title="RAI",Rai 1
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
+#EXTINF:-1 group-title="RAI",Rai 2
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
+#EXTINF:-1 group-title="RAI",Rai 3
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
+#EXTINF:-1 group-title="MEDIASET",Canale 5
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
+#EXTINF:-1 group-title="MEDIASET",Italia 1
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
+#EXTINF:-1 group-title="MEDIASET",Rete 4
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
+#EXTINF:-1 group-title="DISCOVERY",NOVE
+https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8
+#EXTINF:-1 group-title="DISCOVERY",Real Time
+https://dplayit-lh.akamaihd.net/i/realtime_italy@128548/master.m3u8
+#EXTINF:-1 group-title="DISCOVERY",DMAX
+https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8
+#EXTINF:-1 group-title="DISCOVERY",HGTV
+https://dplayit-lh.akamaihd.net/i/hgtv_italy@152075/master.m3u8
+#EXTINF:-1 group-title="SKY",TV8
+https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8
+#EXTINF:-1 group-title="LA7",La7
+https://la7live-lh.akamaihd.net/i/La7_1@48907/master.m3u8
+#EXTINF:-1 group-title="SVIZZERA",RSI LA1
+https://lsaplus.swisstxt.ch/audio/video/la1_720.stream/chunklist_DVR.m3u8
+#EXTINF:-1 group-title="SVIZZERA",RSI LA2
+https://lsaplus.swisstxt.ch/audio/video/la2_720.stream/chunklist_DVR.m3u8
