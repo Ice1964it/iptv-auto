@@ -10,12 +10,12 @@ HEADERS = {
 
 def check(url):
     try:
-        r = requests.get(url, timeout=10, headers=HEADERS)
-        return r.status_code == 200
+        r = requests.get(url, timeout=10, headers=HEADERS, allow_redirects=True)
+        return r.status_code < 400
     except:
         return False
 
-with open("channels.json", "r") as f:
+with open("channels.json", "r", encoding="utf-8") as f:
     channels = json.load(f)
 
 online = []
@@ -32,15 +32,12 @@ for c in channels:
         print(f"OFF  {c['name']}")
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
-
+    # timestamp per forzare update e debug
+    f.write(f"# Generated: {datetime.now().isoformat()}\n")
     f.write("#EXTM3U\n")
 
     for c in online:
-
-        f.write(
-            f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n'
-        )
-
+        f.write(f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n')
         f.write(c["url"] + "\n")
 
 print("\nPlaylist generated.")
