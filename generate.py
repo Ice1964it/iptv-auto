@@ -1,38 +1,20 @@
 import json
-import requests
 from datetime import datetime
 
 OUTPUT = "playlist.m3u"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
-def check(url):
-    try:
-        r = requests.get(url, timeout=10, headers=HEADERS, allow_redirects=True)
-        return r.status_code < 400
-    except:
-        return False
 
 with open("channels.json", "r", encoding="utf-8") as f:
     channels = json.load(f)
 
 online = []
 
-print("Checking streams...\n")
+print("Generating playlist...\n")
 
 for c in channels:
-    status = check(c["url"])
-
-    if status:
-        print(f"OK   {c['name']}")
-        online.append(c)
-    else:
-        print(f"OFF  {c['name']}")
+    print(f"ADD  {c['name']}")
+    online.append(c)
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
-    # timestamp per forzare update e debug
     f.write(f"# Generated: {datetime.now().isoformat()}\n")
     f.write("#EXTM3U\n")
 
@@ -42,4 +24,3 @@ with open(OUTPUT, "w", encoding="utf-8") as f:
 
 print("\nPlaylist generated.")
 print("Channels:", len(online))
-print("Date:", datetime.now())
