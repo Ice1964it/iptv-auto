@@ -1,5 +1,50 @@
-#EXTM3U
-# Generated: 2026-05-17 08:37:20.671091
+#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 
-#EXTINF:-1 group-title="TEST",TV8
+
+# ===== LA7 =====
+
+#EXTINF:-1 tvg-name="La7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/02/LA7_-_Logo_2011.svg" group-title="LA7",La7
+https://la7live-lh.akamaihd.net/i/La7_1@48907/master.m3u8
+
+# ===== MEDIASET =====
+
+#EXTINF:-1 tvg-name="Canale 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0a/Canale_5_-_2018.svg" group-title="MEDIASET",Canale 5
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
+#EXTINF:-1 tvg-name="Italia 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f6/Italia1.svg" group-title="MEDIASET",Italia 1
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
+#EXTINF:-1 tvg-name="Rete 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/37/Rete_4_-_2018.svg" group-title="MEDIASET",Rete 4
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
+
+# ===== MUSICA =====
+
+#EXTINF:-1 tvg-name="Deejay TV" tvg-logo="" group-title="MUSICA",Deejay TV
+https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8
+#EXTINF:-1 tvg-name="Kiss Kiss TV" tvg-logo="" group-title="MUSICA",Kiss Kiss TV
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+#EXTINF:-1 tvg-name="RTL 102.5 TV" tvg-logo="" group-title="MUSICA",RTL 102.5 TV
+https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8
+#EXTINF:-1 tvg-name="Radio Freccia TV" tvg-logo="" group-title="MUSICA",Radio Freccia TV
+https://streamcdnb1-4a02.kxcdn.com/hls/ra002_720.m3u8
+#EXTINF:-1 tvg-name="Radio Italia TV" tvg-logo="" group-title="MUSICA",Radio Italia TV
+https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Virgin Radio TV" tvg-logo="" group-title="MUSICA",Virgin Radio TV
+https://virginradiohls-i.akamaihd.net/hls/live/2009907/vrtv/master.m3u8
+
+# ===== RAI =====
+
+#EXTINF:-1 tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/Rai_3_-_Logo_2016.svg" group-title="RAI",Rai 3
+https://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
+#EXTINF:-1 tvg-name="Rai News 24" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d0/RaiNews24.svg" group-title="RAI",Rai News 24
+https://rainews-live.akamaized.net/hls/live/598767/rainews/rainews/playlist.m3u8
+
+# ===== SKY =====
+
+#EXTINF:-1 tvg-name="TV8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/38/TV8_logo.svg" group-title="SKY",TV8
 https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8
+
+# ===== SVIZZERA =====
+
+#EXTINF:-1 tvg-name="RSI LA1" tvg-logo="" group-title="SVIZZERA",RSI LA1
+https://lsaplus.swisstxt.ch/audio/video/la1_720.stream/chunklist_DVR.m3u8
+#EXTINF:-1 tvg-name="RSI LA2" tvg-logo="" group-title="SVIZZERA",RSI LA2
+https://lsaplus.swisstxt.ch/audio/video/la2_720.stream/chunklist_DVR.m3u8
