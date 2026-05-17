@@ -1,0 +1,15 @@
+#EXTM3U
+# Offline generated: 2026-05-17T08:10:07.624184
+
+#EXTINF:-1 group-title="MEDIASET",Canale 5
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
+#EXTINF:-1 group-title="MEDIASET",Italia 1
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
+#EXTINF:-1 group-title="MEDIASET",Rete 4
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
+#EXTINF:-1 group-title="SKY",TV8
+https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8
+#EXTINF:-1 group-title="SVIZZERA",RSI LA1
+https://lsaplus.swisstxt.ch/audio/video/la1_720.stream/chunklist_DVR.m3u8
+#EXTINF:-1 group-title="SVIZZERA",RSI LA2
+https://lsaplus.swisstxt.ch/audio/video/la2_720.stream/chunklist_DVR.m3u8

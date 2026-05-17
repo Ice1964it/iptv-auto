@@ -1,0 +1,14 @@
+[OK] Rai 1 -> 200
+[OK] Rai 2 -> 200
+[OK] Rai 3 -> 200
+[OFF] Canale 5 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(c5)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
+[OFF] Italia 1 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(i1)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
+[OFF] Rete 4 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(r4)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
+[OK] NOVE -> 400
+[OK] Real Time -> 400
+[OK] DMAX -> 400
+[OK] HGTV -> 400
+[OFF] TV8 -> HTTPSConnectionPool(host='sky-live.fl.freecaster.net', port=443): Max retries exceeded with url: /live/tv8/tv8.stream/playlist.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='sky-live.fl.freecaster.net', port=443): Failed to resolve 'sky-live.fl.freecaster.net' ([Errno -2] Name or service not known)"))
+[OK] La7 -> 400
+[OFF] RSI LA1 -> HTTPSConnectionPool(host='lsaplus.swisstxt.ch', port=443): Max retries exceeded with url: /audio/video/la1_720.stream/chunklist_DVR.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='lsaplus.swisstxt.ch', port=443): Failed to resolve 'lsaplus.swisstxt.ch' ([Errno -2] Name or service not known)"))
+[OFF] RSI LA2 -> HTTPSConnectionPool(host='lsaplus.swisstxt.ch', port=443): Max retries exceeded with url: /audio/video/la2_720.stream/chunklist_DVR.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='lsaplus.swisstxt.ch', port=443): Failed to resolve 'lsaplus.swisstxt.ch' ([Errno -2] Name or service not known)"))
