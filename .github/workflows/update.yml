@@ -33,5 +33,3 @@ jobs:
           git diff --cached --quiet || git commit -m "IPTV update"
           git push
           
-        - name: Debug repo
-         run: ls -R
