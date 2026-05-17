@@ -18,24 +18,17 @@ with open("channels.json", "r", encoding="utf-8") as f:
 
 final = []
 
-print("\nChecking with fallback system...\n")
+print("\nGenerating playlist (NO strict check)...\n")
 
 for c in channels:
 
-    working = None
+    print(f"ADD  {c['name']}")
 
-    for url in c["sources"]:
-        if check(url):
-            working = url
-            break
-
-    if working:
-        print(f"OK   {c['name']}")
-        final.append({
-            "name": c["name"],
-            "group": c["group"],
-            "url": working
-        })
+    final.append({
+        "name": c["name"],
+        "group": c["group"],
+        "url": c["url"]
+    })
     else:
         print(f"OFF  {c['name']}")
 
