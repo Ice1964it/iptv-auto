@@ -2,7 +2,7 @@
 
 Playlist IPTV aggiornata automaticamente.
 
-Ultimo aggiornamento: 2026-05-17 08:50:51.091836
+Ultimo aggiornamento: 2026-05-17 08:57:42.562295
 
 
 ## ITALIA
