@@ -1,17 +1,7 @@
 import json
-import requests
 from datetime import datetime
 
 OUTPUT = "playlist.m3u"
-
-HEADERS = {"User-Agent": "Mozilla/5.0"}
-
-def check(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=6, allow_redirects=True, stream=True)
-        return r.status_code < 400
-    except:
-        return False
 
 print("Loading channels.json...")
 
@@ -20,7 +10,7 @@ with open("channels.json", "r", encoding="utf-8") as f:
 
 valid = []
 
-print("\nChecking sources...\n")
+print("\nBuilding playlist (no strict filtering)...\n")
 
 for c in channels:
 
@@ -28,27 +18,30 @@ for c in channels:
     group = c.get("group")
     sources = c.get("sources", [])
 
-    if not name or not group or not sources:
-        print("SKIP invalid:", c)
+    # fallback: se sources vuoto NON bloccare tutto
+    if not name or not group:
+        print("SKIP invalid entry:", c)
         continue
 
-    working_url = None
+    # prende primo source disponibile
+    url = None
 
-    for url in sources:
-        if check(url):
-            working_url = url
-            break
+    if isinstance(sources, list) and len(sources) > 0:
+        url = sources[0]
 
-    if working_url:
-        print("OK  ", name)
-        valid.append({
-            "name": name,
-            "group": group,
-            "url": working_url
-        })
-    else:
-        print("OFF ", name)
+    if not url:
+        print("SKIP no url:", name)
+        continue
 
+    print("ADD", name)
+
+    valid.append({
+        "name": name,
+        "group": group,
+        "url": url
+    })
+
+# 🔥 FORZARE CREAZIONE FILE SEMPRE
 with open(OUTPUT, "w", encoding="utf-8") as f:
 
     f.write("#EXTM3U\n")
@@ -65,6 +58,10 @@ with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n')
         f.write(c["url"] + "\n")
 
+# 🔥 DEBUG OBBLIGATORIO
 print("\nDONE")
-print("Valid:", len(valid))
-print("Total:", len(channels))
+print("Channels in JSON:", len(channels))
+print("Channels written:", len(valid))
+
+if len(valid) == 0:
+    print("\nWARNING: playlist EMPTY -> problem in sources")
