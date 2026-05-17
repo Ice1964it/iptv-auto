@@ -1,18 +1,37 @@
 [
   {
-    "name": "Rai 1",
-    "group": "RAI",
-    "sources": [
-      "PRIMARY_URL",
-      "FALLBACK_URL"
-    ]
+    "name": "TV8",
+    "group": "ITALIA",
+    "url": "https://tv8-live-dash1-prod.akamaized.net/hls/live/2034445/tv8/master.m3u8"
   },
   {
-    "name": "Canale 5",
-    "group": "MEDIASET",
-    "sources": [
-      "PRIMARY_URL",
-      "FALLBACK_URL"
-    ]
+    "name": "Cielo",
+    "group": "ITALIA",
+    "url": "https://sky-cielo-live.akamaized.net/hls/live/2003502/cielo/master.m3u8"
+  },
+  {
+    "name": "RTL 102.5 TV",
+    "group": "MUSICA",
+    "url": "https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8"
+  },
+  {
+    "name": "Radio Italia TV",
+    "group": "MUSICA",
+    "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8"
+  },
+  {
+    "name": "Deejay TV",
+    "group": "MUSICA",
+    "url": "https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8"
+  },
+  {
+    "name": "Virgin Radio TV",
+    "group": "MUSICA",
+    "url": "https://virginradiohls-i.akamaihd.net/hls/live/2009907/vrtv/master.m3u8"
+  },
+  {
+    "name": "Kiss Kiss TV",
+    "group": "MUSICA",
+    "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8"
   }
 ]
