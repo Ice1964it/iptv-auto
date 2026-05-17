@@ -43,7 +43,7 @@ jobs:
       - name: Check changes
         id: changes
         run: |
-          git add playlist.m3u
+          git add playlist.m3u offline.m3u check.log
 
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
