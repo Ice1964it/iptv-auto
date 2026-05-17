@@ -1,7 +1,77 @@
 [
   {
+    "name": "Rai News 24",
+    "group": "RAI",
+    "url": "https://rainews-live.akamaized.net/hls/live/598767/rainews/rainews/playlist.m3u8"
+  },
+  {
+    "name": "Rai 3",
+    "group": "RAI",
+    "url": "https://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8"
+  },
+  {
+    "name": "Canale 5",
+    "group": "MEDIASET",
+    "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8"
+  },
+  {
+    "name": "Italia 1",
+    "group": "MEDIASET",
+    "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8"
+  },
+  {
+    "name": "Rete 4",
+    "group": "MEDIASET",
+    "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8"
+  },
+  {
     "name": "TV8",
-    "group": "TEST",
+    "group": "SKY",
     "url": "https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8"
+  },
+  {
+    "name": "La7",
+    "group": "LA7",
+    "url": "https://la7live-lh.akamaihd.net/i/La7_1@48907/master.m3u8"
+  },
+  {
+    "name": "RSI LA1",
+    "group": "SVIZZERA",
+    "url": "https://lsaplus.swisstxt.ch/audio/video/la1_720.stream/chunklist_DVR.m3u8"
+  },
+  {
+    "name": "RSI LA2",
+    "group": "SVIZZERA",
+    "url": "https://lsaplus.swisstxt.ch/audio/video/la2_720.stream/chunklist_DVR.m3u8"
+  },
+  {
+    "name": "Radio Italia TV",
+    "group": "MUSICA",
+    "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8"
+  },
+  {
+    "name": "RTL 102.5 TV",
+    "group": "MUSICA",
+    "url": "https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8"
+  },
+  {
+    "name": "Kiss Kiss TV",
+    "group": "MUSICA",
+    "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8"
+  },
+  {
+    "name": "Deejay TV",
+    "group": "MUSICA",
+    "url": "https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8"
+  },
+  {
+    "name": "Virgin Radio TV",
+    "group": "MUSICA",
+    "url": "https://virginradiohls-i.akamaihd.net/hls/live/2009907/vrtv/master.m3u8"
+  },
+  {
+    "name": "Radio Freccia TV",
+    "group": "MUSICA",
+    "url": "https://streamcdnb1-4a02.kxcdn.com/hls/ra002_720.m3u8"
   }
 ]
