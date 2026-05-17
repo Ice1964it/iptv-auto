@@ -10,9 +10,29 @@
     "url": "https://sky-cielo-live.akamaized.net/hls/live/2003502/cielo/master.m3u8"
   },
   {
-    "name": "RTL 102.5 TV",
-    "group": "MUSICA",
-    "url": "https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8"
+    "name": "La7",
+    "group": "ITALIA",
+    "url": "https://d15umi5iaezxgx.cloudfront.net/LA7/stream.m3u8"
+  },
+  {
+    "name": "NOVE",
+    "group": "DISCOVERY",
+    "url": "https://live2-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(nove)/index.m3u8"
+  },
+  {
+    "name": "DMAX",
+    "group": "DISCOVERY",
+    "url": "https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8"
+  },
+  {
+    "name": "Real Time",
+    "group": "DISCOVERY",
+    "url": "https://dplayit-lh.akamaihd.net/i/realtime_italy@128548/master.m3u8"
+  },
+  {
+    "name": "Rai News 24",
+    "group": "RAI",
+    "url": "https://rai-news-lh.akamaihd.net/i/rainews_1@179131/master.m3u8"
   },
   {
     "name": "Radio Italia TV",
@@ -20,18 +40,8 @@
     "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8"
   },
   {
-    "name": "Deejay TV",
+    "name": "RTL 102.5 TV",
     "group": "MUSICA",
-    "url": "https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8"
-  },
-  {
-    "name": "Virgin Radio TV",
-    "group": "MUSICA",
-    "url": "https://virginradiohls-i.akamaihd.net/hls/live/2009907/vrtv/master.m3u8"
-  },
-  {
-    "name": "Kiss Kiss TV",
-    "group": "MUSICA",
-    "url": "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8"
+    "url": "https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8"
   }
 ]
