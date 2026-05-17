@@ -1,26 +1,16 @@
 #EXTM3U
-# Generated: 2026-05-17T08:10:07.624009
+# Generated: 2026-05-17T08:15:58.013494
 
-#EXTINF:-1 group-title="RAI",Rai 1
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
-#EXTINF:-1 group-title="RAI",Rai 2
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
+#EXTINF:-1 group-title="RAI",Rai News 24
+https://rainews-live.akamaized.net/hls/live/598767/rainews/rainews/playlist.m3u8
 #EXTINF:-1 group-title="RAI",Rai 3
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
+https://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
 #EXTINF:-1 group-title="MEDIASET",Canale 5
-https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
 #EXTINF:-1 group-title="MEDIASET",Italia 1
-https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
 #EXTINF:-1 group-title="MEDIASET",Rete 4
-https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
-#EXTINF:-1 group-title="DISCOVERY",NOVE
-https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8
-#EXTINF:-1 group-title="DISCOVERY",Real Time
-https://dplayit-lh.akamaihd.net/i/realtime_italy@128548/master.m3u8
-#EXTINF:-1 group-title="DISCOVERY",DMAX
-https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8
-#EXTINF:-1 group-title="DISCOVERY",HGTV
-https://dplayit-lh.akamaihd.net/i/hgtv_italy@152075/master.m3u8
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
 #EXTINF:-1 group-title="SKY",TV8
 https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8
 #EXTINF:-1 group-title="LA7",La7
@@ -29,3 +19,13 @@ https://la7live-lh.akamaihd.net/i/La7_1@48907/master.m3u8
 https://lsaplus.swisstxt.ch/audio/video/la1_720.stream/chunklist_DVR.m3u8
 #EXTINF:-1 group-title="SVIZZERA",RSI LA2
 https://lsaplus.swisstxt.ch/audio/video/la2_720.stream/chunklist_DVR.m3u8
+#EXTINF:-1 group-title="MUSICA",Kiss Kiss TV
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+#EXTINF:-1 group-title="MUSICA",Radio Italia TV
+https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8
+#EXTINF:-1 group-title="MUSICA",Deejay TV
+https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8
+#EXTINF:-1 group-title="MUSICA",RTL 102.5 TV
+https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8
+#EXTINF:-1 group-title="MUSICA",Virgin Radio TV
+https://virginradiohls-i.akamaihd.net/hls/live/2009907/vrtv/master.m3u8

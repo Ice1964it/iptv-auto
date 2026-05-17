@@ -1,14 +1,14 @@
-[OK] Rai 1 -> 200
-[OK] Rai 2 -> 200
-[OK] Rai 3 -> 200
-[OFF] Canale 5 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(c5)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
-[OFF] Italia 1 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(i1)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
-[OFF] Rete 4 -> HTTPSConnectionPool(host='live3-mediaset-it.akamaized.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(r4)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live3-mediaset-it.akamaized.net', port=443): Failed to resolve 'live3-mediaset-it.akamaized.net' ([Errno -2] Name or service not known)"))
-[OK] NOVE -> 400
-[OK] Real Time -> 400
-[OK] DMAX -> 400
-[OK] HGTV -> 400
+[OFF] Rai News 24 -> HTTPSConnectionPool(host='rainews-live.akamaized.net', port=443): Max retries exceeded with url: /hls/live/598767/rainews/rainews/playlist.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='rainews-live.akamaized.net', port=443): Failed to resolve 'rainews-live.akamaized.net' ([Errno -2] Name or service not known)"))
+[OK] Rai 3 -> 404
+[OFF] Canale 5 -> HTTPSConnectionPool(host='live2.msf.cdn.mediaset.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(c5)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live2.msf.cdn.mediaset.net', port=443): Failed to resolve 'live2.msf.cdn.mediaset.net' ([Errno -2] Name or service not known)"))
+[OFF] Italia 1 -> HTTPSConnectionPool(host='live2.msf.cdn.mediaset.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(i1)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live2.msf.cdn.mediaset.net', port=443): Failed to resolve 'live2.msf.cdn.mediaset.net' ([Errno -2] Name or service not known)"))
+[OFF] Rete 4 -> HTTPSConnectionPool(host='live2.msf.cdn.mediaset.net', port=443): Max retries exceeded with url: /content/hls_h0_clr_vos/live/channel(r4)/index.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='live2.msf.cdn.mediaset.net', port=443): Failed to resolve 'live2.msf.cdn.mediaset.net' ([Errno -2] Name or service not known)"))
 [OFF] TV8 -> HTTPSConnectionPool(host='sky-live.fl.freecaster.net', port=443): Max retries exceeded with url: /live/tv8/tv8.stream/playlist.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='sky-live.fl.freecaster.net', port=443): Failed to resolve 'sky-live.fl.freecaster.net' ([Errno -2] Name or service not known)"))
 [OK] La7 -> 400
 [OFF] RSI LA1 -> HTTPSConnectionPool(host='lsaplus.swisstxt.ch', port=443): Max retries exceeded with url: /audio/video/la1_720.stream/chunklist_DVR.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='lsaplus.swisstxt.ch', port=443): Failed to resolve 'lsaplus.swisstxt.ch' ([Errno -2] Name or service not known)"))
 [OFF] RSI LA2 -> HTTPSConnectionPool(host='lsaplus.swisstxt.ch', port=443): Max retries exceeded with url: /audio/video/la2_720.stream/chunklist_DVR.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='lsaplus.swisstxt.ch', port=443): Failed to resolve 'lsaplus.swisstxt.ch' ([Errno -2] Name or service not known)"))
+[OK] Kiss Kiss TV -> 200
+[OK] Radio Italia TV -> 404
+[OFF] Deejay TV -> HTTPSConnectionPool(host='deejay-live.akamaized.net', port=443): Max retries exceeded with url: /hls/live/2016948/deejaytv/master.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='deejay-live.akamaized.net', port=443): Failed to resolve 'deejay-live.akamaized.net' ([Errno -2] Name or service not known)"))
+[OFF] RTL 102.5 TV -> HTTPSConnectionPool(host='rtl-radio-streaming.akamaized.net', port=443): Max retries exceeded with url: /hls/live/2043153/rtl1025/master.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='rtl-radio-streaming.akamaized.net', port=443): Failed to resolve 'rtl-radio-streaming.akamaized.net' ([Errno -2] Name or service not known)"))
+[OK] Virgin Radio TV -> 400
