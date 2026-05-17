@@ -1,3 +1,33 @@
 #EXTM3U
-# Generated: 2026-05-17 09:36:14.582976
+# Generated 2026-05-17 09:40:42.098051
 
+
+# ===== ITALIA =====
+
+#EXTINF:-1 group-title="ITALIA",TV8
+https://tv8-live-dash1-prod.akamaized.net/hls/live/2034445/tv8/master.m3u8
+#EXTINF:-1 group-title="ITALIA",Cielo
+https://sky-cielo-live.akamaized.net/hls/live/2003502/cielo/master.m3u8
+#EXTINF:-1 group-title="ITALIA",La7
+https://d15umi5iaezxgx.cloudfront.net/LA7/stream.m3u8
+
+# ===== DISCOVERY =====
+
+#EXTINF:-1 group-title="DISCOVERY",NOVE
+https://live2-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(nove)/index.m3u8
+#EXTINF:-1 group-title="DISCOVERY",DMAX
+https://dplayit-lh.akamaihd.net/i/dmax_italy@122424/master.m3u8
+#EXTINF:-1 group-title="DISCOVERY",Real Time
+https://dplayit-lh.akamaihd.net/i/realtime_italy@128548/master.m3u8
+
+# ===== RAI =====
+
+#EXTINF:-1 group-title="RAI",Rai News 24
+https://rai-news-lh.akamaihd.net/i/rainews_1@179131/master.m3u8
+
+# ===== MUSICA =====
+
+#EXTINF:-1 group-title="MUSICA",Radio Italia TV
+https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8
+#EXTINF:-1 group-title="MUSICA",RTL 102.5 TV
+https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8
