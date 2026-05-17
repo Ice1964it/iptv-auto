@@ -1,53 +1,34 @@
 import json
-import requests
 from datetime import datetime
 
 OUTPUT = "playlist.m3u"
 
-HEADERS = {"User-Agent": "Mozilla/5.0"}
-
-def check(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=6, allow_redirects=True, stream=True)
-        return r.status_code < 400
-    except:
-        return False
-
 with open("channels.json", "r", encoding="utf-8") as f:
     channels = json.load(f)
 
-final = []
+channels = sorted(channels, key=lambda x: (x["group"], x["name"]))
 
-print("\nGenerating playlist (NO strict check)...\n")
-
-for c in channels:
-
-    print(f"ADD  {c['name']}")
-
-    final.append({
-        "name": c["name"],
-        "group": c["group"],
-        "url": c["url"]
-    })
-    else:
-        print(f"OFF  {c['name']}")
-
-final.sort(key=lambda x: (x["group"], x["name"]))
+print("\nGenerating playlist...\n")
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
 
     f.write("#EXTM3U\n")
-    f.write(f"# AUTO HEAL IPTV {datetime.now()}\n\n")
+    f.write(f"# Generated: {datetime.now()}\n\n")
 
-    group = ""
+    current_group = ""
 
-    for c in final:
+    for c in channels:
 
-        if c["group"] != group:
-            group = c["group"]
-            f.write(f"\n# ===== {group} =====\n\n")
+        if c["group"] != current_group:
+            current_group = c["group"]
+            f.write(f"\n# ===== {current_group} =====\n\n")
 
-        f.write(f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n')
+        print(f"ADD {c['name']}")
+
+        f.write(
+            f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n'
+        )
         f.write(c["url"] + "\n")
 
-print("\nDONE:", len(final))
+print("\nDONE")
+print("Channels:", len(channels))
