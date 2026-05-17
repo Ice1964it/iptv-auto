@@ -12,5 +12,5 @@ https://sky-live.fl.freecaster.net/live/tv8/tv8.stream/playlist.m3u8
 https://deejay-live.akamaized.net/hls/live/2016948/deejaytv/master.m3u8
 #EXTINF:-1 tvg-name="RTL 102.5 TV" tvg-logo="" group-title="MUSICA",RTL 102.5 TV
 https://rtl-radio-streaming.akamaized.net/hls/live/2043153/rtl1025/master.m3u8
-#EXTINF:-1 tvg-name="Radio Italia TV" tvg-logo="" group-title="MUSICA",Radio Italia TV
-https://radioitaliatv.akamaized.net/hls/live/2093117/radioitaliatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Monte Carlo TV" tvg-logo="" group-title="MUSICA",Radio Italia TV
+https://live02-seg.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/index.m3u8
