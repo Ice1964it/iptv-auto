@@ -1,67 +1,72 @@
 import json
+import os
 from datetime import datetime
 
 OUTPUT = "playlist.m3u"
 
-print("Loading channels.json...")
+print("=== IPTV DEBUG START ===")
 
-with open("channels.json", "r", encoding="utf-8") as f:
-    channels = json.load(f)
+# 1. mostra file presenti
+print("FILES IN REPO:")
+print(os.listdir())
+
+# 2. verifica file JSON
+if not os.path.exists("channels.json"):
+    print("ERROR: channels.json NOT FOUND")
+    exit(1)
+
+# 3. carica JSON in modo sicuro
+try:
+    with open("channels.json", "r", encoding="utf-8") as f:
+        raw = f.read()
+        print("\nJSON RAW SIZE:", len(raw))
+
+        channels = json.loads(raw)
+
+except Exception as e:
+    print("ERROR READING JSON:", e)
+    exit(1)
+
+print("\nCHANNEL COUNT:", len(channels))
 
 valid = []
 
-print("\nBuilding playlist (no strict filtering)...\n")
-
 for c in channels:
+
+    print("CHECK:", c)
 
     name = c.get("name")
     group = c.get("group")
-    sources = c.get("sources", [])
+    url = c.get("url")
 
-    # fallback: se sources vuoto NON bloccare tutto
-    if not name or not group:
-        print("SKIP invalid entry:", c)
+    if not name or not group or not url:
+        print("SKIP INVALID:", c)
         continue
 
-    # prende primo source disponibile
-    url = None
+    valid.append(c)
 
-    if isinstance(sources, list) and len(sources) > 0:
-        url = sources[0]
+print("\nVALID CHANNELS:", len(valid))
 
-    if not url:
-        print("SKIP no url:", name)
-        continue
-
-    print("ADD", name)
-
-    valid.append({
-        "name": name,
-        "group": group,
-        "url": url
-    })
-
-# 🔥 FORZARE CREAZIONE FILE SEMPRE
+# 4. FORZA SCRITTURA FILE (anche se vuoto)
 with open(OUTPUT, "w", encoding="utf-8") as f:
 
     f.write("#EXTM3U\n")
-    f.write(f"# Generated: {datetime.now()}\n\n")
+    f.write(f"# Generated {datetime.now()}\n\n")
 
-    current_group = ""
+    current = ""
 
     for c in valid:
 
-        if c["group"] != current_group:
-            current_group = c["group"]
-            f.write(f"\n# ===== {current_group} =====\n\n")
+        if c["group"] != current:
+            current = c["group"]
+            f.write(f"\n# ===== {current} =====\n\n")
 
         f.write(f'#EXTINF:-1 group-title="{c["group"]}",{c["name"]}\n')
         f.write(c["url"] + "\n")
 
-# 🔥 DEBUG OBBLIGATORIO
-print("\nDONE")
-print("Channels in JSON:", len(channels))
-print("Channels written:", len(valid))
+print("\nFILE WRITTEN:", OUTPUT)
 
 if len(valid) == 0:
-    print("\nWARNING: playlist EMPTY -> problem in sources")
+    print("⚠️ WARNING: playlist empty -> JSON problem or file not loaded")
+
+print("=== IPTV DEBUG END ===")
