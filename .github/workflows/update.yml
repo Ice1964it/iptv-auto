@@ -24,6 +24,9 @@ jobs:
 
       - name: Run generator
         run: python generate.py
+        
+        - name: Debug repo
+        run: ls -R
 
       - name: Commit changes
         run: |
