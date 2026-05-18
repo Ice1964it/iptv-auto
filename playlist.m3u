@@ -1,3 +1,316 @@
 #EXTM3U
-# Generated 2026-05-18 13:23:28.984836
+# Generated 2026-05-18 13:37:56.583765
 
+
+# ===== TV =====
+
+#EXTINF:-1 group-title="TV",Rai 1
+https://raiuno1-live.akamaized.net/hls/live/598308/raiuno1/raiuno1/playlist_ma_1800-5000.m3u8
+#EXTINF:-1 group-title="TV",Rai 2
+https://raidue1-live.akamaized.net/hls/live/598310/raidue1/raidue1/playlist_ma_1800-5000.m3u8
+#EXTINF:-1 group-title="TV",Rai 3
+https://raitre1-live.akamaized.net/hls/live/598313/raitre1/raitre1/playlist_ma_1800-5000.m3u8
+#EXTINF:-1 group-title="TV",Rete 4
+https://live02-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Canale 5
+https://live02-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Italia 1
+https://live02-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",NOVE
+https://d3pkcyie9gav9y.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jrrq3jtymmzoc/out/v1/fdb9d129ff7f4a7bbc8fe0902122e48f/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",20 Mediaset
+https://live02-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Rai 4
+https://raiquattro2-live.akamaized.net/hls/live/598316/raiquattro2/raiquattro2/playlist.m3u8
+#EXTINF:-1 group-title="TV",Iris
+https://live02-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Rai 5
+https://raicinque1-live.akamaized.net/hls/live/598318/raicinque1/raicinque1/playlist_ma.m3u8
+#EXTINF:-1 group-title="TV",Rai Movie
+https://raimovie1-live.akamaized.net/hls/live/598324/raimovie1/raimovie1/playlist_ma.m3u8
+#EXTINF:-1 group-title="TV",Rai Premium
+https://raipremium1-live.akamaized.net/hls/live/598328/raipremium1/raipremium1/playlist_ma.m3u8
+#EXTINF:-1 group-title="TV",TwentySeven
+https://live02-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",TV2000
+https://hls.live2.meride.tv/hls/live/2028947/pu934tjb/playlist.m3u8
+#EXTINF:-1 group-title="TV",La5
+https://live02-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Real Time
+https://d2op4s24rubfe0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-up3xdjecl66jn/out/v1/54acbe71ddae4c9986c03fad1352bc84/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",QVC
+https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
+#EXTINF:-1 group-title="TV",Food Network
+https://d9kc4bu8iry3b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-x4si0bflc4gq7/out/v1/dcecf7d9fd2b49c59e85a65016ddc255/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Cine34
+https://live02-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Focus
+https://live02-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist.m3u8
+#EXTINF:-1 group-title="TV",Discovery
+https://d3a5c87efixjp8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-94vzyl58b7u8n/out/v1/12837340dbdf42f2b13481a5ca6f80b2/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Giallo
+https://d2iz84wnbtnuey.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-32xgu2ku0wsk9/out/v1/8a939414e62c460a9ccab7b699ed1106/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Top Crime
+https://live02-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Boing
+https://live02-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Rai Yoyo
+https://raiyoyo1-live.akamaized.net/hls/live/598330/raiyoyo1/raiyoyo1/playlist.m3u8
+#EXTINF:-1 group-title="TV",Boing Plus
+https://uvotv.zappr.stream/101.m3u8
+#EXTINF:-1 group-title="TV",Cartoonito
+https://live02-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",Super!
+https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist_dvr.m3u8
+#EXTINF:-1 group-title="TV",Rai News 24
+https://d27wu3gni4gipu.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7i6bsjw4lfg88/ABCD/Rai/RaiNews24_IT/rainews1/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 2
+https://live02-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",TGcom24
+https://live02-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",DMAX
+https://d24suwc4j2wvyy.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-09ap0j3u2xm1u/out/v1/1ef9705b7c534751889b6e01bb032f80/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Casa Italia 53
+https://liveac915ha.streamcloud.it/channel09/playlist.m3u8
+#EXTINF:-1 group-title="TV",Rai Storia
+https://raistoria1-live.akamaized.net/hls/live/598337/raistoria1/raistoria1/playlist.m3u8
+#EXTINF:-1 group-title="TV",Mediaset Extra
+https://live02-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",HGTV - Home & Garden
+https://d21emhonubg8zy.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yspg3gkuqw4f2/out/v1/063d830ad098456e8c76bd198dea0122/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Rai Scuola
+https://raiscuola1-live.akamaized.net/hls/live/598335/raiscuola1/raiscuola1/playlist.m3u8
+#EXTINF:-1 group-title="TV",Rai Sport
+https://raisportuno1-live.akamaized.net/hls/live/598320/raisportuno1/raisportuno1/playlist_mo_1800-5000.m3u8
+#EXTINF:-1 group-title="TV",Discovery Turbo
+https://d1m086gym5403i.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-9yn62b89f3m5l/out/v1/fa965f3d7abe46108988aed4fb3d0ee5/HLS_CMAF_DRM/index.m3u8
+#EXTINF:-1 group-title="TV",Sportitalia
+https://amg01370-italiansportcom-sportitalia-rakuten-3hmdb.amagi.tv/hls/amagi_hls_data_rakutenAA-sportitalia-rakuten/CDN/master.m3u8
+#EXTINF:-1 group-title="TV",il61
+https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
+#EXTINF:-1 group-title="TV",Donna TV
+https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
+#EXTINF:-1 group-title="TV",Canale 63
+https://uvotv.zappr.stream/257.m3u8
+#EXTINF:-1 group-title="TV",SuperTennis
+https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+#EXTINF:-1 group-title="TV",Alma TV
+https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio 105 TV
+https://live02-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",R101 TV
+https://live02-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/index.m3u8
+#EXTINF:-1 group-title="TV",BOM Channel
+https://5f22d76e220e1.streamlock.net/canale6/canale6/playlist.m3u8
+#EXTINF:-1 group-title="TV",Deejay TV
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio Italia TV
+https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8
+#EXTINF:-1 group-title="TV",Canale Italia
+https://liveac915ha.streamcloud.it/channel11/playlist.m3u8
+#EXTINF:-1 group-title="TV",Rai 4K
+https://raievent10-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 121
+https://liveac915ha.streamcloud.it/channel01/playlist.m3u8
+#EXTINF:-1 group-title="TV",Canale 122
+https://router.xdevel.com/video0s975363-69/stream/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia Channel
+https://uvotv.zappr.stream/71.m3u8
+#EXTINF:-1 group-title="TV",Arte Italia 124
+https://liveac915ha.streamcloud.it/channel02/playlist.m3u8
+#EXTINF:-1 group-title="TV",Arte Italia 125
+https://liveac915ha.streamcloud.it/channel03/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 126
+https://liveac915ha.streamcloud.it/channel04/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 127
+https://liveac915ha.streamcloud.it/channel05/playlist.m3u8
+#EXTINF:-1 group-title="TV",Gold TV Italia
+https://uvotv.zappr.stream/317.m3u8
+#EXTINF:-1 group-title="TV",La4 Italia
+https://uvotv.zappr.stream/320.m3u8
+#EXTINF:-1 group-title="TV",Channel 24
+https://uvotv.zappr.stream/323.m3u8
+#EXTINF:-1 group-title="TV",Rete Italia
+https://uvotv.zappr.stream/326.m3u8
+#EXTINF:-1 group-title="TV",Lineagem
+https://uvotv.zappr.stream/164.m3u8
+#EXTINF:-1 group-title="TV",ArteIN
+https://5a1178b42cc03.streamlock.net/chiossone/chiossone/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 134
+https://liveac915ha.streamcloud.it/channel06/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 135
+https://liveac915ha.streamcloud.it/channel07/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italia 136
+https://liveac915ha.streamcloud.it/channel08/playlist.m3u8
+#EXTINF:-1 group-title="TV",Gold Invest
+https://uvotv.zappr.stream/332.m3u8
+#EXTINF:-1 group-title="TV",Telecampione
+https://5f22d76e220e1.streamlock.net/telecampione/telecampione/playlist.m3u8
+#EXTINF:-1 group-title="TV",Deluxe 139
+https://59d7d6f47d7fc.streamlock.net/pierstyle/pierstyle/playlist.m3u8
+#EXTINF:-1 group-title="TV",StarMarket
+https://uvotv.zappr.stream/338.m3u8
+#EXTINF:-1 group-title="TV",Canale 144
+https://uvotv.zappr.stream/335.m3u8
+#EXTINF:-1 group-title="TV",Padre Pio TV
+https://600f07e114306.streamlock.net/PadrePioTV/livestream/playlist.m3u8
+#EXTINF:-1 group-title="TV",Fascino TV 147
+https://64b16f23efbee.streamlock.net/canale147/canale147/playlist.m3u8
+#EXTINF:-1 group-title="TV",EQUtv
+https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
+#EXTINF:-1 group-title="TV",Fascino TV 157
+https://64b16f23efbee.streamlock.net/canale157/canale157/playlist.m3u8
+#EXTINF:-1 group-title="TV",Kiss Kiss TV
+https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8
+#EXTINF:-1 group-title="TV",Canale 162
+https://uvotv.zappr.stream/550.m3u8
+#EXTINF:-1 group-title="TV",Odeon 24
+https://streaming.softwarecreation.it/Odeon/Odeon/playlist.m3u8
+#EXTINF:-1 group-title="TV",Fascino TV 165
+https://64b16f23efbee.streamlock.net/canale165/canale165/playlist.m3u8
+#EXTINF:-1 group-title="TV",Orler TV
+https://w1.mediastreaming.it/orlertv/livestream/playlist.m3u8
+#EXTINF:-1 group-title="TV",Fascino TV 168
+https://64b16f23efbee.streamlock.net/canale168/canale168/playlist.m3u8
+#EXTINF:-1 group-title="TV",Fascino TV 169
+https://64b16f23efbee.streamlock.net/canale169/canale169/playlist.m3u8
+#EXTINF:-1 group-title="TV",Prima Free
+https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 2 Visual
+https://visualradiodue3-live.akamaized.net/hls/live/2034078/visualradiodue3/visualradiodue3/playlist.m3u8
+#EXTINF:-1 group-title="TV",AP Channel
+https://64b16f23efbee.streamlock.net/apchannel/apchannel/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio Roma Network
+https://www.dailymotion.com/cdn/live/video/x98v4v8.m3u8?sec=kmpTBsX8LlC4t_EOK2rdhHmIDrT5f-SbP023JGqRSBQBeAZMqQVFIDsvB0omzVDr
+#EXTINF:-1 group-title="TV",Italia Sera TV
+https://5f22d76e220e1.streamlock.net/canale10/canale10/playlist.m3u8
+#EXTINF:-1 group-title="TV",Welcome In
+https://fms.premio.link/welcomein/playlist.m3u8
+#EXTINF:-1 group-title="TV",Tesory Channel
+https://uvotv.zappr.stream/140.m3u8
+#EXTINF:-1 group-title="TV",Terre Euganee Channel
+https://5f22d76e220e1.streamlock.net/canale3/canale3/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Caliente
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist.m3u8
+#EXTINF:-1 group-title="TV",Cusano News 7
+https://router.xdevel.com/video1s975363-1596/stream/playlist.m3u8
+#EXTINF:-1 group-title="TV",Man-ga
+https://c65b9e710bde44819015af98e72cd7ab.msvdn.net/live/S93572876/aILSQPYFY3pF/manifest.m3u8
+#EXTINF:-1 group-title="TV",Genius 240
+https://uvotv.zappr.stream/149.m3u8
+#EXTINF:-1 group-title="TV",France 24
+https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 group-title="TV",Sicilia 242
+https://5f22d76e220e1.streamlock.net/sicilia24/sicilia24/playlist.m3u8
+#EXTINF:-1 group-title="TV",Parole di Vita
+https://64b16f23efbee.streamlock.net/paroledivita/paroledivita/playlist.m3u8
+#EXTINF:-1 group-title="TV",Il Sole 24 Ore TV
+https://760869f771b04ca8a1e4daa89dd6da3e.msvdn.net/live/S88650405/33lZG4owunfW/playlist.m3u8
+#EXTINF:-1 group-title="TV",BeJoy.Kids
+https://64b16f23efbee.streamlock.net/bejoy/bejoy/playlist.m3u8
+#EXTINF:-1 group-title="TV",248TV
+https://5f22d76e220e1.streamlock.net/canale2/canale2/playlist.m3u8
+#EXTINF:-1 group-title="TV",Enjoy TV Italia
+https://64b16f23efbee.streamlock.net/grandeitaliatv/grandeitaliatv/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio Radio TV
+https://200912.global.ssl.fastly.net/646b335e2291a2022444bb7c/live_abeef7b0903711eeb7c62796fbf7de76/index.m3u8
+#EXTINF:-1 group-title="TV",Maria Vision
+https://1601580044.rsc.cdn77.org/live/_jcn_/amls:CHANNEL_2/playlist.m3u8
+#EXTINF:-1 group-title="TV",OnAir Italia
+https://5f22d76e220e1.streamlock.net/nauticachannel/nauticachannel/playlist.m3u8
+#EXTINF:-1 group-title="TV",Gambero Rosso
+https://www.dailymotion.com/cdn/live/video/x9us6y4.m3u8?sec=znapDBnGZ4vUPyUrfKmXYA
+#EXTINF:-1 group-title="TV",Radiofreccia
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8
+#EXTINF:-1 group-title="TV",Urania
+https://69d6d7eab63943c4810c4098feaa0d9c.msvdn.net/live/S76542633/a8BwWIUxagF6/playlist.m3u8
+#EXTINF:-1 group-title="TV",Dr. Palmas TV
+https://streamer2.premio.link/dr_palmastv/index.m3u8
+#EXTINF:-1 group-title="TV",Byoblu
+https://uvotv.zappr.stream/179.m3u8
+#EXTINF:-1 group-title="TV",RDS Social TV
+https://stream.rdstv.radio/index.m3u8
+#EXTINF:-1 group-title="TV",Radio Zeta
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist.m3u8
+#EXTINF:-1 group-title="TV",ArteOraTV
+https://stream10.xdevel.com/video0s978273-2568/stream/playlist.m3u8
+#EXTINF:-1 group-title="TV",2Settanta TV
+http://185.91.68.35:1935/live/cdn5/playlist.m3u8
+#EXTINF:-1 group-title="TV",Satisfaction TV
+https://stream10.xdevel.com/video22s975955-2186/stream/playlist.m3u8
+#EXTINF:-1 group-title="TV",Nexum Channel
+https://64b16f23efbee.streamlock.net/nexumchannel/nexumchannel/playlist.m3u8
+#EXTINF:-1 group-title="TV",Malpensa24 TV
+https://streamer3.premio.link/malpensa-tv/index.m3u8
+#EXTINF:-1 group-title="TV",Imprese
+https://streamer2.premio.link/imprese/playlist.m3u8
+#EXTINF:-1 group-title="TV",Italian Fishing TV
+https://fms.premio.link/fishingtv/index.m3u8
+#EXTINF:-1 group-title="TV",Automoto
+https://3f70a96a11dd4da88ee87c52fdd0521c.msvdn.net/live/S75749031/EYqrcmlFWlJD/playlist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 1
+https://radiounoita-live.akamaized.net/hls/live/2032820/radiounoita/radiounoita/radio1_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 2
+https://radiodue-live.akamaized.net/hls/live/2032592/radiodue/radiodue/radio2_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 3
+https://radiotre-live.akamaized.net/hls/live/2032594/radiotre/radiotre/radio3_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai GR Parlamento
+https://radioparlamento-live.akamaized.net/hls/live/2032597/radioparlamento/radioparlamento/radioparlamento_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Isoradio
+https://isoradioita-live.akamaized.net/hls/live/2032601/isoradioita/isoradioita/isoradioita_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 3 Classica
+https://radiotreclassica-live.akamaized.net/hls/live/2032595/radiotreclassica/radiotreclassica/radio3classica_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio Kids
+https://radiokids-live.akamaized.net/hls/live/2032600/radiokids/radiokids/radiokids_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio Live Napoli
+https://radiolive-live.akamaized.net/hls/live/2032599/radiolive/radiolive/radiolive_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio Techetè
+https://radiotechete-live.akamaized.net/hls/live/2032598/radiotechete/radiotechete/radiotechete_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio Tutta Italiana
+https://radiotuttaitaliana-live.akamaized.net/hls/live/2032596/radiotuttaitaliana/radiotuttaitaliana/radiotuttaitaliana_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Rai Radio 1 Sport
+https://radiounosportita-live.akamaized.net/hls/live/2032590/radiounosportita/radiounosportita/radio1sportita_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",No Name Radio
+https://radiodueindie-live.akamaized.net/hls/live/2032593/radiodueindie/radiodueindie/radio2indie_256/chunklist.m3u8
+#EXTINF:-1 group-title="TV",Radio Capital
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/radiocapital/radiocapital/master_ma2.m3u8
+#EXTINF:-1 group-title="TV",Radio Deejay
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/radiodeejay/radiodeejay/master_ma.m3u8
+#EXTINF:-1 group-title="TV",Radio m2o
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/radiom2o/radiom2o/master_ma.m3u8
+#EXTINF:-1 group-title="TV",RDS
+https://stream.rds.radio/audio/rds.stream_aac/playlist.m3u8
+#EXTINF:-1 group-title="TV",InBlu2000
+https://www.radioinblu.it/live-stream/inblu2000-playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/WjpMtPyNjHwj/playlist_audio.m3u8
+#EXTINF:-1 group-title="TV",Radio Zeta
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/clhI2IJWRnn7/playlist_audio.m3u8
+#EXTINF:-1 group-title="TV",Radiofreccia
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/D6MENOraq6Qy/playlist_audio.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Traffic
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Best
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Napulè
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Disco
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S51100361/0Fb4R3k82b5Z/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Caliente
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist.m3u8
+#EXTINF:-1 group-title="TV",RTL 102.5 Bro&Sis
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S75007890/MUGHuxc9dQ3b/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio Italia
+https://radioitaliasmi.akamaized.net/hls/live/2093120/RISMI/master.m3u8
+#EXTINF:-1 group-title="TV",La Leonessa
+https://cdn12.streamshow.it/hbbtv-supertv/supertv/playlist.m3u8
+#EXTINF:-1 group-title="TV",Radio Margherita Più
+https://648026e87a75e.streamlock.net/radiomargherita/radiomargherita/playlist.m3u8
+#EXTINF:-1 group-title="TV",Class CNBC
+https://www.dailymotion.com/cdn/live/video/x91c8ww.m3u8?sec=D9OwEfHs-e7O6pQ-qlnROg
+#EXTINF:-1 group-title="TV",SuperSix
+https://5f22d76e220e1.streamlock.net/supersixnew/supersixnew/playlist.m3u8
+#EXTINF:-1 group-title="TV",Class TV Moda
+https://www.dailymotion.com/cdn/live/video/x98rt88.m3u8?sec=3FZxZQeceI08NWbQwAxAKdpdnH8gYPtFSg2hr2m8v11-0gQsz2FldP--C6DTACA-
