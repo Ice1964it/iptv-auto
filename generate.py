@@ -20,7 +20,6 @@ try:
 
         data = json.loads(raw)
 
-        # FIX
         if isinstance(data, dict):
             channels = data.get("channels", [])
         else:
@@ -36,25 +35,38 @@ valid = []
 
 for c in channels:
 
-    print("CHECK:", c)
+    print("CHECK:", c.get("name"))
 
-    # sicurezza extra
     if not isinstance(c, dict):
         print("SKIP NON-DICT:", c)
         continue
 
     name = c.get("name")
-    url = c.get("url")
     group = c.get("group", "TV")
 
+    # 🔥 LOGICA URL CORRETTA
+    url = None
+
+    # 1. usa geoblock se disponibile
+    geoblock = c.get("geoblock")
+    if isinstance(geoblock, dict):
+        gb_url = geoblock.get("url")
+        if isinstance(gb_url, str) and gb_url.startswith("http"):
+            url = gb_url
+            print("USE GEOBLOCK")
+
+    # 2. fallback su url normale
+    if not url:
+        raw_url = c.get("url")
+        if isinstance(raw_url, str) and raw_url.startswith("http"):
+            url = raw_url
+
+    # 3. scarta se niente
     if not name or not url:
-        print("SKIP INVALID:", c)
+        print("SKIP INVALID:", c.get("name"))
         continue
 
-    if not isinstance(url, str) or not url.startswith("http"):
-        print("SKIP NON HTTP:", url)
-        continue
-
+    # 4. solo HLS (evita DRM / DASH / iframe / zappr)
     if c.get("type") != "hls":
         print("SKIP NON HLS:", c.get("type"))
         continue
@@ -86,6 +98,6 @@ with open(OUTPUT, "w", encoding="utf-8") as f:
 print("\nFILE WRITTEN:", OUTPUT)
 
 if len(valid) == 0:
-    print("⚠️ WARNING: playlist empty -> JSON problem or file not loaded")
+    print("⚠️ WARNING: playlist empty")
 
 print("=== IPTV DEBUG END ===")
