@@ -70,7 +70,13 @@ for c in channels:
     if c.get("type") != "hls":
         print("SKIP NON HLS:", c.get("type"))
         continue
-
+        
+    if "akamai" in url or "zappr" in url:
+        pass  # ok
+    elif "cloudfront" in url:
+        print("SKIP DRM POSSIBILE:", url)
+        continue
+        
     valid.append({
         "name": name,
         "url": url,
