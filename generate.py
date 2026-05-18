@@ -6,22 +6,25 @@ OUTPUT = "playlist.m3u"
 
 print("=== IPTV DEBUG START ===")
 
-# 1. mostra file presenti
 print("FILES IN REPO:")
 print(os.listdir())
 
-# 2. verifica file JSON
 if not os.path.exists("channels.json"):
     print("ERROR: channels.json NOT FOUND")
     exit(1)
 
-# 3. carica JSON in modo sicuro
 try:
     with open("channels.json", "r", encoding="utf-8") as f:
         raw = f.read()
         print("\nJSON RAW SIZE:", len(raw))
 
-        channels = json.loads(raw)
+        data = json.loads(raw)
+
+        # FIX
+        if isinstance(data, dict):
+            channels = data.get("channels", [])
+        else:
+            channels = data
 
 except Exception as e:
     print("ERROR READING JSON:", e)
@@ -35,6 +38,11 @@ for c in channels:
 
     print("CHECK:", c)
 
+    # sicurezza extra
+    if not isinstance(c, dict):
+        print("SKIP NON-DICT:", c)
+        continue
+
     name = c.get("name")
     group = c.get("group")
     url = c.get("url")
@@ -47,7 +55,6 @@ for c in channels:
 
 print("\nVALID CHANNELS:", len(valid))
 
-# 4. FORZA SCRITTURA FILE (anche se vuoto)
 with open(OUTPUT, "w", encoding="utf-8") as f:
 
     f.write("#EXTM3U\n")
