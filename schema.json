@@ -1,0 +1,559 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Zappr channels schema",
+    "type": "object",
+    "properties": {
+        "channels": {
+            "type": "array",
+            "title": "Channels array",
+            "description": "The array that contains all channels.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "lcn": {
+                        "type": "number",
+                        "title": "Channel LCN",
+                        "description": "The channel's LCN on DTT / Freeview."
+                    },
+                    "logo": {
+                        "type": "string",
+                        "title": "Channel logo",
+                        "description": "The filename of the channel's logo. If it's in SVG format, you need to suffix it with '.svg'; otherwise, if it's in PNG/WEBP format you must not specify any file extension.",
+                        "pattern": "^(?!.*\\.(png|webp)$).*"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Channel name",
+                        "description": "The channel's name."
+                    },
+                    "subtitle": {
+                        "type": "string",
+                        "title": "Channel subtitle",
+                        "description": "The channel's subtitle, which will be shown in a smaller and gray form under the channel name."
+                    },
+                    "hd": {
+                        "type": "boolean",
+                        "title": "Mark as HD",
+                        "description": "If the channel is in high resolution (and quality!)."
+                    },
+                    "uhd": {
+                        "type": "boolean",
+                        "title": "Mark as 4K",
+                        "description": "If the channel is in 4K."
+                    },
+                    "radio": {
+                        "type": ["string", "boolean"],
+                        "title": "Mark as a radio channel",
+                        "description": "If the channel is a radio station (if its streaming only has an audio track or if its video track is a static image).",
+                        "enum": [true, "video", false],
+                        "meta:enum": {
+                            "true": "The channel is a radio, without any video track.",
+                            "video": "The channel is a radio, with a video track only containing a static image."
+                        },
+                        "anyOf": [{
+                            "const": true,
+                            "description": "The channel is a radio, without any video track."
+                        },
+                        {
+                            "const": "video",
+                            "description": "The channel is a radio, with a video track only containing a static image."        
+                        }]
+                    },
+                    "ondemand": {
+                        "type": "boolean",
+                        "title": "Mark as VOD",
+                        "description": "If the channel is a VOD and not a livestream."
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Stream type",
+                        "description": "The stream type.",
+                        "enum": ["hls", "dash", "twitch", "youtube", "iframe", "audio", "direct", "popup"],
+                        "meta:enum": {
+                            "hls": "HLS (.m3u / .m3u8)",
+                            "dash": "DASH (.mpd)",
+                            "twitch": "Twitch (username)",
+                            "youtube": "YouTube (video or channel ID)",
+                            "iframe": "IFrame (URL)",
+                            "audio": "Audio (e.g. Icecast)",
+                            "direct": "'Direct' (not HLS, DASH, etc.): a livestream/VOD playable by a <video> (not audio!) element without the need of any additional JavaScript libraries",
+                            "popup": "Popup window (URL)"
+                        },
+                        "anyOf": [{
+                            "const": "hls",
+                            "title": "HLS (.m3u / .m3u8)"
+                        },
+                        {
+                            "const": "dash",
+                            "title": "DASH (.mpd)"
+                        },
+                        {
+                            "const": "twitch",
+                            "title": "Twitch (username)"  
+                        },
+                        {
+                            "const": "youtube",
+                            "title": "YouTube (video or channel ID)"
+                        },
+                        {
+                            "const": "iframe",
+                            "title": "IFrame (URL)"   
+                        },
+                        {
+                            "const": "audio",
+                            "title": "Audio (e.g. Icecast)"
+                        },
+                        {
+                            "const": "direct",
+                            "title": "'Direct' (not HLS, DASH, etc.)",
+                            "description": "A livestream/VOD playable by a <video> (not audio!) element without the need of any additional JavaScript libraries"
+                        },
+                        {
+                            "const": "popup",
+                            "title": "Popup window (URL)"
+                        }]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Stream URL",
+                        "description": "The stream URL."
+                    },
+                    "http": {
+                        "type": "boolean",
+                        "title": "Mark stream as not visibile via HTTPS",
+                        "description": "If the stream URL doesn't use the HTTPS protocol and has to be viewed via HTTP."
+                    },
+                    "license": {
+                        "type": "string",
+                        "title": "DRM/license type",
+                        "description": "What DRM/licensing system to use to play the channel.",
+                        "enum": ["xdevel-wms", "rai-akamai", "clearkey"],
+                        "meta:enum": {
+                            "xdevel-wms": "Xdevel WMS Auth Sign (play.xdevel.com/was)",
+                            "rai-akamai": "Rai channels on Akamai servers",
+                            "clearkey": "ClearKey (specify keys in licensedetails)"
+                        },
+                        "anyOf": [{
+                            "const": "xdevel-wms",
+                            "title": "Xdevel WMS Auth Sign (play.xdevel.com/was)"
+                        },
+                        {
+                            "const": "rai-akamai",
+                            "title": "Rai channels on Akamai servers"
+                        },
+                        {
+                            "const": "clearkey",
+                            "title": "ClearKey",
+                            "description": "Specify keys in licensedetails"
+                        }]
+                    },
+                    "licensedetails": {
+                        "type": ["object", "string"],
+                        "title": "Additional DRM/licensing parameters"
+                    },
+                    "hbbtvapp": {
+                        "type": "boolean",
+                        "title": "Mark as HbbTV app"
+                    },
+                    "hbbtvmosaic": {
+                        "type": "boolean",
+                        "title": "Mark as HbbTV/IP mosaic"
+                    },
+                    "feed": {
+                        "type": "boolean",
+                        "title": "Mark as feed",
+                        "description": "If the channel is to be considered a 'feed' (if its stream isn't active 24/7)."
+                    },
+                    "adult": {
+                        "type": ["string", "boolean"],
+                        "title": "Mark as 18+",
+                        "description": "If the channel broadcasts 18+ content, and whether it does that all day or only in the night.",
+                        "enum": [true, "night", false],
+                        "meta:enum": {
+                            "true": "The channel exclusively broadcasts 18+ content.",
+                            "night": "The channel only broadcasts 18+ content in the time slot from 11 PM to 7 AM (during which it's legal for channels in Italy with an LCN higher than 99 to broadcast explicit, but not hardcore, content)."
+                        },
+                        "anyOf": [{
+                            "const": true,
+                            "description": "The channel exclusively broadcasts 18+ content."
+                        },
+                        {
+                            "const": "night",
+                            "description": "The channel only broadcasts 18+ content in the time slot from 11 PM to 7 AM (during which it's legal for channels in Italy with an LCN higher than 99 to broadcast explicit, but not hardcore, content)."        
+                        }]
+                    },
+                    "disabled": {
+                        "type": "string",
+                        "title": "Disable channel",
+                        "enum": ["not-working"],
+                        "meta:enum": {
+                            "not-working": "This channel's streaming isn't working at the moment."
+                        },
+                        "anyOf": [{
+                            "const": "not-working",
+                            "description": "This channel's streaming isn't working at the moment."
+                        }]
+                    },
+                    "nativeHLS": {
+                        "type": "object",
+                        "title": "Use an alternative HLS link in an iframe",
+                        "description": "If the browser supports native HLS playback, the HLS URL in this variable will be played through an iframe. Used to avoid CORS restrictions.",
+                        "additionalProperties": false,
+                        "properties": {
+                            "url": {
+                                "$ref": "#/properties/channels/items/properties/url"
+                            },
+                            "quality": {
+                                "title": "Quality",
+                                "description": "The channel's resolution/quality. If it has multiple, input the highest it can reach."
+                            }
+                        },
+                        "required": ["url"]
+                    },
+                    "api": {
+                        "type": "string",
+                        "title": "Use an API to play the channel",
+                        "description": "If the channel needs an API to be played.",
+                        "enum": ["vercel", "cloudflare"],
+                        "meta:enum": {
+                            "vercel": "Use the Vercel API (https://github.com/ZapprTV/vercel-api) to play the channel.",
+                            "cloudflare": "Use the Cloudflare API (https://github.com/ZapprTV/cloudflare-api) to play the channel."
+                        },
+                        "anyOf": [{
+                            "const": "vercel",
+                            "description": "Use the Vercel API (https://github.com/ZapprTV/vercel-api) to play the channel."
+                        },
+                        {
+                            "const": "cloudflare",
+                            "description": "Use the Cloudflare API (https://github.com/ZapprTV/cloudflare-api) to play the channel."  
+                        }]
+                    },
+                    "cssfix": {
+                        "type": "string",
+                        "title": "Apply CSS fixes",
+                        "description": "For channels whose streams require some CSS to look good.",
+                        "enum": ["streamshow-embed", "raiplay-sound", "stretch", "squashed-height", "very-squashed-height", "five-two-squashed-height", "center-iframe", "servizistreaming-embed", "livetvuk-embed", "native-hls-720p-iframe", "letterbox", "raiparlamento-embed"],
+                        "meta:enum": {
+                            "streamshow-embed": "StreamShow embed (embed.streamshow.net)",
+                            "raiplay-sound": "RaiPlay Sound",
+                            "stretch": "Stretch the video track of a channel in 4:3 to 16:9.",
+                            "squashed-height": "Stretch the video track of a channel with a squashed height to 16:9.",
+                            "very-squashed-height": "Stretch the video track of a channel with a VERY squashed height to 16:9.",
+                            "five-two-squashed-height": "Stretch the video track of a channel in 5:2 to 16:9.",
+                            "center-iframe": "Center IFrame",
+                            "servizistreaming-embed": "ServiziStreaming.it embed",
+                            "livetvuk-embed": "LiveTVUK.com embed",
+                            "native-hls-720p-iframe": "Scale a 720p video playing natively in an iframe to the video player's width",
+                            "letterbox": "Scale a 16:9 video letterboxed within a 4:3 stream to the video player's width",
+                            "raiparlamento-embed": "Embed di Rai Parlamento"
+                        },
+                        "anyOf": [{
+                            "const": "streamshow-embed",
+                            "title": "StreamShow embed (embed.streamshow.net)"
+                        },
+                        {
+                            "const": "raiplay-sound",
+                            "title": "RaiPlay Sound"  
+                        },
+                        {
+                            "const": "stretch",
+                            "title": "Stretch to 16:9 (from 4:3)",
+                            "description": "Stretch the video track of a channel in 4:3 to 16:9."
+                        },
+                        {
+                            "const": "squashed-height",
+                            "title": "Stretch to 16:9 (from a squashed height)",
+                            "description": "Stretch the video track of a channel with a squashed height to 16:9."  
+                        },
+                        {
+                            "const": "very-squashed-height",
+                            "title": "Stretch to 16:9 (from a VERY squashed height)",
+                            "description": "Stretch the video track of a channel with a VERY squashed height to 16:9."  
+                        },
+                        {
+                            "const": "five-two-squashed-height",
+                            "title": "Stretch to 16:9 (from 5:2)",
+                            "description": "Stretch the video track of a channel in 5:2 to 16:9."
+                        },
+                        {
+                            "const": "center-iframe",
+                            "title": "Center IFrame"        
+                        },
+                        {
+                            "const": "servizistreaming-embed",
+                            "title": "ServiziStreaming.it embed"
+                        },
+                        {
+                            "const": "livetvuk-embed",
+                            "title": "LiveTVUK.com embed"
+                        },
+                        {
+                            "const": "native-hls-720p-iframe",
+                            "title": "Scale a 720p video playing natively in an iframe to the video player's width"
+                        },
+                        {
+                            "const": "letterbox",
+                            "title": "Scale a 16:9 video letterboxed within a 4:3 stream to the video player's width"
+                        },
+                        {
+                            "const": "raiparlamento-embed",
+                            "title": "Embed di Rai Parlamento"
+                        }]
+                    },
+                    "fallback": {
+                        "type": "object",
+                        "title": "Fallback stream info",
+                        "description": "Info about the fallback stream that will be used if the main one fails.",
+                        "additionalProperties": false,
+                        "properties": {
+                            "type": {
+                                "$ref": "#/properties/channels/items/properties/type"
+                            },
+                            "url": {
+                                "$ref": "#/properties/channels/items/properties/url"
+                            },
+                            "api": {
+                                "$ref": "#/properties/channels/items/properties/api"
+                            },
+                            "cssfix": {
+                                "$ref": "#/properties/channels/items/properties/cssfix"
+                            }
+                        },
+                        "required": ["type", "url"]
+                    },
+                    "geoblock": {
+                        "type": ["boolean", "object"],
+                        "title": "Geoblocking settings",
+                        "description": "If the channel is geoblocked outside of its country of origin, and whether to disable it completely or to use an alternative link that works worldwide.",
+                        "additionalProperties": false,
+                        "properties": {
+                            "type": {
+                                "$ref": "#/properties/channels/items/properties/type"
+                            },
+                            "url": {
+                                "$ref": "#/properties/channels/items/properties/url"
+                            },
+                            "api": {
+                                "$ref": "#/properties/channels/items/properties/api"
+                            },
+                            "cssfix": {
+                                "$ref": "#/properties/channels/items/properties/cssfix"
+                            },
+                            "license": {
+                                "$ref": "#/properties/channels/items/properties/license"
+                            },
+                            "licensedetails": {
+                                "$ref": "#/properties/channels/items/properties/licensedetails"
+                            }
+                        },
+                        "required": ["type", "url"]
+                    },
+                    "epg": {
+                        "type": "object",
+                        "title": "EPG info",
+                        "description": "Info on the channel's EPG, and from which source to fetch it from.",
+                        "additionalProperties": false,
+                        "properties": {
+                            "source": {
+                                "type": "string",
+                                "title": "Source"
+                            },
+                            "id": {
+                                "type": "string",
+                                "title": "Channel ID"
+                            }
+                        },
+                        "required": ["source", "id"]
+                    },
+                    "manualRestart": {
+                        "type": "object",
+                        "title": "Manual restart settings",
+                        "additionalProperties": false,
+                        "properties": {
+                            "source": {
+                                "type": "string",
+                                "title": "Source"
+                            },
+                            "id": {
+                                "type": "string",
+                                "title": "Channel ID"
+                            }
+                        },
+                        "required": ["source", "id"]
+                    },
+                    "timeshift": {
+                        "type": "number",
+                        "title": "Timeshift settings",
+                        "description": "Start the channel stream with a specified amount of timeshift hours."
+                    },
+                    "hbbtv": {
+                        "type": "array",
+                        "title": "HbbTV/IP channels",
+                        "description": "The channels visible through the channel's HbbTV/IP app.",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "categorySeparator": {
+                                    "type": "string",
+                                    "title": "Category separator",
+                                    "description": "This key creates a category separator in the HbbTV/IP channel list."
+                                },
+                                "sublcn": {
+                                    "type": "number",
+                                    "title": "Channel 'subLCN'",
+                                    "description": "The channel's 'subLCN': that is, its 'numbering' based on the order of the channels in the parent channel's HbbTV/IP app."
+                                },
+                                "logo": {
+                                    "$ref": "#/properties/channels/items/properties/logo"
+                                },
+                                "name": {
+                                    "$ref": "#/properties/channels/items/properties/name"
+                                },
+                                "subtitle": {
+                                    "$ref": "#/properties/channels/items/properties/subtitle"
+                                },
+                                "hd": {
+                                    "$ref": "#/properties/channels/items/properties/hd"
+                                },
+                                "uhd": {
+                                    "$ref": "#/properties/channels/items/properties/uhd"
+                                },
+                                "radio": {
+                                    "$ref": "#/properties/channels/items/properties/radio"
+                                },
+                                "ondemand": {
+                                    "$ref": "#/properties/channels/items/properties/ondemand"
+                                },
+                                "type": {
+                                    "$ref": "#/properties/channels/items/properties/type"
+                                },
+                                "url": {
+                                    "$ref": "#/properties/channels/items/properties/url"
+                                },
+                                "http": {
+                                    "$ref": "#/properties/channels/items/properties/http"
+                                },
+                                "license": {
+                                    "$ref": "#/properties/channels/items/properties/license"
+                                },
+                                "licensedetails": {
+                                    "$ref": "#/properties/channels/items/properties/licensedetails"
+                                },
+                                "hbbtvapp": {
+                                    "$ref": "#/properties/channels/items/properties/hbbtvapp"
+                                },
+                                "hbbtvmosaic": {
+                                    "$ref": "#/properties/channels/items/properties/hbbtvmosaic"
+                                },
+                                "feed": {
+                                    "$ref": "#/properties/channels/items/properties/feed"
+                                },
+                                "adult": {
+                                    "$ref": "#/properties/channels/items/properties/adult"
+                                },
+                                "disabled": {
+                                    "$ref": "#/properties/channels/items/properties/disabled"
+                                },
+                                "api": {
+                                    "$ref": "#/properties/channels/items/properties/api"
+                                },
+                                "cssfix": {
+                                    "$ref": "#/properties/channels/items/properties/cssfix"
+                                },
+                                "fallback": {
+                                    "$ref": "#/properties/channels/items/properties/fallback"
+                                },
+                                "geoblock": {
+                                    "$ref": "#/properties/channels/items/properties/geoblock"
+                                },
+                                "epg": {
+                                    "$ref": "#/properties/channels/items/properties/epg"
+                                }
+                            },
+                            "allOf": [
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "hbbtvapp": { "const": true }
+                                        },
+                                        "required": ["hbbtvapp"]
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "type": { "oneOf": [{ "const": "iframe" }, { "const": "popup" }] }
+                                        },
+                                        "required": ["type"]
+                                    }
+                                },
+                                {
+                                    "if": {
+                                        "required": ["categorySeparator"]
+                                    },
+                                    "then": {},
+                                    "else": {
+                                        "if": {
+                                            "required": ["disabled"]
+                                        },
+                                        "then": {
+                                            "required": ["sublcn", "logo", "name"]
+                                        },
+                                        "else": {
+                                            "required": ["sublcn", "logo", "name", "type", "url"]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "lcn",
+                    "logo",
+                    "name"
+                ],
+                "allOf": [
+                    {
+                        "if": {
+                            "properties": {
+                                "hbbtvapp": { "const": true }
+                            },
+                            "required": ["hbbtvapp"]
+                        },
+                        "then": {
+                            "properties": {
+                                "type": { "oneOf": [{ "const": "iframe" }, { "const": "popup" }] }
+                            },
+                            "required": ["type"]
+                        }
+                    },
+                    {
+                        "if": {
+                            "anyOf": [
+                                {
+                                    "properties": {
+                                        "hbbtvmosaic": { "const": true }
+                                    },
+                                    "required": ["hbbtvmosaic"]
+                                },
+                                {
+                                    "required": ["disabled"]
+                                }
+                            ]
+                        },
+                        "then": {
+                            "required": ["lcn", "logo", "name"]
+                        },
+                        "else": {
+                            "required": ["lcn", "logo", "name", "type", "url"]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "required": [
+        "channels"
+    ]
+}
