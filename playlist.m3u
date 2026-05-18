@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-05-18 14:11:37.036426
+# Generated 2026-05-18 14:17:02.438319
 
 
 # ===== TV =====
@@ -49,13 +49,13 @@ https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/p
 #EXTINF:-1 group-title="TV",Top Crime
 https://uvotv.zappr.stream/86.m3u8
 #EXTINF:-1 group-title="TV",Boing
-https://feapi.turner.streamity.com/api/v1/Config/getConfig?platformId=ae56bf6a-c2b4-4b66-8330-19283f646d7e
+https://live02-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/index.m3u8
 #EXTINF:-1 group-title="TV",Rai Yoyo
 https://raiyoyo1-live.akamaized.net/hls/live/598330/raiyoyo1/raiyoyo1/playlist.m3u8
 #EXTINF:-1 group-title="TV",Boing Plus
 https://uvotv.zappr.stream/101.m3u8
 #EXTINF:-1 group-title="TV",Cartoonito
-https://feapi.turner.streamity.com/api/v1/Config/getConfig?platformId=95e33995-d7ed-44cb-be3b-97bc6df93977
+https://live02-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8
 #EXTINF:-1 group-title="TV",Super!
 https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist_dvr.m3u8
 #EXTINF:-1 group-title="TV",Italia 2
