@@ -43,24 +43,27 @@ for c in channels:
         print("SKIP NON-DICT:", c)
         continue
 
-   name = c.get("name")
-   url = c.get("url")
-   group = c.get("group", "TV")
+    name = c.get("name")
+    url = c.get("url")
+    group = c.get("group", "TV")
 
-if not name or not url:
-    print("SKIP INVALID:", c)
-    continue
+    if not name or not url:
+        print("SKIP INVALID:", c)
+        continue
 
-if not url.startswith("http"):
-    print("SKIP NON HTTP:", url)
-    continue
+    if not isinstance(url, str) or not url.startswith("http"):
+        print("SKIP NON HTTP:", url)
+        continue
 
-if c.get("type") != "hls":
-    print("SKIP NON HLS:", c.get("type"))
-    continue
-    
+    if c.get("type") != "hls":
+        print("SKIP NON HLS:", c.get("type"))
+        continue
 
-    valid.append(c)
+    valid.append({
+        "name": name,
+        "url": url,
+        "group": group
+    })
 
 print("\nVALID CHANNELS:", len(valid))
 
