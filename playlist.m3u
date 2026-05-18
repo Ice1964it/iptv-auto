@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-05-18 14:04:01.993570
+# Generated 2026-05-18 14:11:37.036426
 
 
 # ===== TV =====
@@ -18,8 +18,6 @@ https://netplus.zappr.stream/canale5.m3u8
 https://netplus.zappr.stream/italia1.m3u8
 #EXTINF:-1 group-title="TV",TV8
 https://uvotv.zappr.stream/269.m3u8
-#EXTINF:-1 group-title="TV",NOVE
-https://d3pkcyie9gav9y.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jrrq3jtymmzoc/out/v1/fdb9d129ff7f4a7bbc8fe0902122e48f/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",20 Mediaset
 https://live02-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
 #EXTINF:-1 group-title="TV",Rai 4
@@ -40,22 +38,14 @@ https://live02-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/index.m3u8
 https://hls.live2.meride.tv/hls/live/2028947/pu934tjb/playlist.m3u8
 #EXTINF:-1 group-title="TV",La5
 https://live02-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/index.m3u8
-#EXTINF:-1 group-title="TV",Real Time
-https://d2op4s24rubfe0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-up3xdjecl66jn/out/v1/54acbe71ddae4c9986c03fad1352bc84/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",QVC
 https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
-#EXTINF:-1 group-title="TV",Food Network
-https://d9kc4bu8iry3b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-x4si0bflc4gq7/out/v1/dcecf7d9fd2b49c59e85a65016ddc255/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",Cine34
 https://uvotv.zappr.stream/92.m3u8
 #EXTINF:-1 group-title="TV",Focus
 https://uvotv.zappr.stream/89.m3u8
 #EXTINF:-1 group-title="TV",RTL 102.5
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist.m3u8
-#EXTINF:-1 group-title="TV",Discovery
-https://d3a5c87efixjp8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-94vzyl58b7u8n/out/v1/12837340dbdf42f2b13481a5ca6f80b2/HLS_CMAF_DRM/index.m3u8
-#EXTINF:-1 group-title="TV",Giallo
-https://d2iz84wnbtnuey.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-32xgu2ku0wsk9/out/v1/8a939414e62c460a9ccab7b699ed1106/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",Top Crime
 https://uvotv.zappr.stream/86.m3u8
 #EXTINF:-1 group-title="TV",Boing
@@ -68,30 +58,22 @@ https://uvotv.zappr.stream/101.m3u8
 https://feapi.turner.streamity.com/api/v1/Config/getConfig?platformId=95e33995-d7ed-44cb-be3b-97bc6df93977
 #EXTINF:-1 group-title="TV",Super!
 https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist_dvr.m3u8
-#EXTINF:-1 group-title="TV",Rai News 24
-https://d27wu3gni4gipu.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7i6bsjw4lfg88/ABCD/Rai/RaiNews24_IT/rainews1/playlist.m3u8
 #EXTINF:-1 group-title="TV",Italia 2
 https://live02-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8
 #EXTINF:-1 group-title="TV",Sky TG24
 https://uvotv.zappr.stream/293.m3u8
 #EXTINF:-1 group-title="TV",TGcom24
 https://live02-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/index.m3u8
-#EXTINF:-1 group-title="TV",DMAX
-https://d24suwc4j2wvyy.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-09ap0j3u2xm1u/out/v1/1ef9705b7c534751889b6e01bb032f80/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",Casa Italia 53
 https://liveac915ha.streamcloud.it/channel09/playlist.m3u8
 #EXTINF:-1 group-title="TV",Rai Storia
 https://netplus.zappr.stream/raistoria.m3u8
 #EXTINF:-1 group-title="TV",Mediaset Extra
 https://live02-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8
-#EXTINF:-1 group-title="TV",HGTV - Home & Garden
-https://d21emhonubg8zy.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yspg3gkuqw4f2/out/v1/063d830ad098456e8c76bd198dea0122/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",Rai Scuola
 https://netplus.zappr.stream/raiscuola.m3u8
 #EXTINF:-1 group-title="TV",Rai Sport
 https://raisportuno1-live.akamaized.net/hls/live/598320/raisportuno1/raisportuno1/playlist_mo_1800-5000.m3u8
-#EXTINF:-1 group-title="TV",Discovery Turbo
-https://d1m086gym5403i.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-9yn62b89f3m5l/out/v1/fa965f3d7abe46108988aed4fb3d0ee5/HLS_CMAF_DRM/index.m3u8
 #EXTINF:-1 group-title="TV",Sportitalia
 https://amg01370-italiansportcom-sportitalia-rakuten-3hmdb.amagi.tv/hls/amagi_hls_data_rakutenAA-sportitalia-rakuten/CDN/master.m3u8
 #EXTINF:-1 group-title="TV",il61
