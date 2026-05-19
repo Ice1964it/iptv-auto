@@ -1,1 +1,17 @@
-
+[
+  {
+    "name": "Rai 1",
+    "page": "https://www.raiplay.it/dirette/rai1",
+    "group": "Italia"
+  },
+  {
+    "name": "Rai 2",
+    "page": "https://www.raiplay.it/dirette/rai2",
+    "group": "Italia"
+  },
+  {
+    "name": "La7",
+    "page": "https://www.la7.it/dirette-tv",
+    "group": "Italia"
+  }
+]
