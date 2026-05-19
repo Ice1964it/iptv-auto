@@ -1,1 +1,12 @@
-
+[
+  {
+    "name": "RSI LA1",
+    "page": "https://www.rsi.ch/play/tv/live/la1",
+    "group": "Svizzera"
+  },
+  {
+    "name": "RSI LA2",
+    "page": "https://www.rsi.ch/play/tv/live/la2",
+    "group": "Svizzera"
+  }
+]
