@@ -1,28 +1,70 @@
-name: Update IPTV
+import json
+import subprocess
+from pathlib import Path
 
-on:
-  schedule:
-    - cron: "0 */6 * * *"
+BASE = Path(__file__).resolve().parent.parent
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+channels_dir = BASE / "channels"
+output_dir = BASE / "output"
 
-    steps:
-      - uses: actions/checkout@v4
+playlist = "#EXTM3U\n\n"
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
 
-      - run: pip install -r requirements.txt
+def get_stream(url):
 
-      - run: python scripts/update.py
+    try:
 
-      - run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+        result = subprocess.run(
+            ["yt-dlp", "-g", url],
+            capture_output=True,
+            text=True
+        )
 
-          git add .
-          git commit -m "Auto update" || exit 0
-          git push
+        if result.returncode != 0:
+            print(f"Errore estrazione: {url}")
+            print(result.stderr)
+            return None
+
+        stream = result.stdout.strip()
+
+        if ".m3u8" in stream:
+            return stream
+
+        return None
+
+    except Exception as e:
+        print(e)
+        return None
+
+
+for file in channels_dir.glob("*.json"):
+
+    with open(file, "r", encoding="utf-8") as f:
+        channels = json.load(f)
+
+    for ch in channels:
+
+        print(f"Canale: {ch['name']}")
+
+        stream = get_stream(ch["page"])
+
+        if stream:
+
+            playlist += (
+                f'#EXTINF:-1 group-title="{ch["group"]}",'
+                f'{ch["name"]}\n'
+                f'{stream}\n\n'
+            )
+
+            print("OK")
+
+        else:
+            print("NON TROVATO")
+
+
+output_dir.mkdir(exist_ok=True)
+
+with open(output_dir / "playlist.m3u", "w", encoding="utf-8") as f:
+    f.write(playlist)
+
+print("Playlist generata!")
