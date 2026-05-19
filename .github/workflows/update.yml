@@ -1,12 +1,8 @@
-name: IPTV PRO Stable
+name: Update IPTV
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-
-permissions:
-  contents: write
 
 jobs:
   build:
@@ -17,19 +13,16 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
-      - name: Run generator
-        run: python generate.py
+      - run: python scripts/update.py
 
-      - name: Commit changes
-        run: |
+      - run: |
           git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add playlist.m3u
-          git diff --cached --quiet || git commit -m "IPTV update"
+          git config user.email "actions@github.com"
+
+          git add .
+          git commit -m "Auto update" || exit 0
           git push
-          
